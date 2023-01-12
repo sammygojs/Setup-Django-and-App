@@ -13,3 +13,13 @@ class MyView(View):
     def post(self, request): 
         # <logic to process POST request> 
         return HttpResponse('response to POST request') 
+
+def main(request):
+    path = request.path 
+    method = request.method 
+    content=''' 
+<center><h2>Testing Django Request Response Objects</h2> 
+<p>Request path : " {}</p> 
+<p>Request Method :{}</p></center> 
+'''.format(path, method) 
+    return HttpResponse(content) 
