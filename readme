@@ -1,5 +1,7 @@
 1>this commit has simple url in demoapp and demoproject with respective views in each folder- functional
 2>implementing class views in demoapp url
+3>extracting request data and type
+4>extract data from path, query and body parameters
 
 this commit
-3>extracting request data and type
+5>use path and query parameter by adding path in urls.py and function in views.py

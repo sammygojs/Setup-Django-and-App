@@ -23,3 +23,14 @@ def main(request):
 <p>Request Method :{}</p></center> 
 '''.format(path, method) 
     return HttpResponse(content) 
+
+#path parameter
+def pathview(request, name, id): 
+    return HttpResponse("Name:{} UserID:{}".format(name, id)) 
+
+
+#query parameter
+def qryview(request): 
+    name = request.GET['name'] 
+    id = request.GET['id'] 
+    return HttpResponse("Name:{} UserID:{}".format(name, id)) 
